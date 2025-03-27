@@ -42,11 +42,11 @@ public class KnightController : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKey("W"))
+        if (Input.GetKey("Space"))
         {
             Vector2 pos = transform.position;
 
-
+            pos.y += 10;
 
             transform.position = pos;
         }
