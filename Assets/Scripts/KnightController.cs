@@ -22,6 +22,7 @@ public class KnightController : MonoBehaviour
     void Update()
     {
         float direction = Input.GetAxis("Horizontal");
+        //float direction = Input.GetAxis("Vertical");
 
         sr.flipX = (direction < 0);
         animator.SetFloat("movement", Mathf.Abs(direction));
